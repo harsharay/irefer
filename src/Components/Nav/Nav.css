@@ -1,0 +1,28 @@
+.nav-root {
+    width: 100vw;
+    height: 60px;
+
+    background-color: #0F497A;
+    color: #EDF2F7;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    /* margin-top: 75px; */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0 140px;
+}
+
+.nav-logo {
+    font-size: 36px;
+    font-weight: 700;
+}
