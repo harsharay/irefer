@@ -10,7 +10,7 @@ const Home = (props) => {
         <div>
             <div>
                 <p>Home page</p>
-                <StyledButton dark={true}>Sign up</StyledButton>
+                {/* <StyledButton dark={true}>Sign up</StyledButton> */}
             </div>
         </div>
     )

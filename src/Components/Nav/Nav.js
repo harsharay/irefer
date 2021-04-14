@@ -10,6 +10,8 @@ const Nav = () => {
     const history = useHistory()
     // const [isLoggedIn, setIsLoggedIn] = useState(false)
 
+    //USER signed in , display Home, jobs, profile items on navBar
+
     
     const handleSignupClick = () => {
         console.log("Signup redirect")
@@ -24,7 +26,7 @@ const Nav = () => {
                 </div>
 
                 <div className="nav-menu">
-                    <StyledButton dark={false} onClick={handleSignupClick}>Sign up</StyledButton>
+                    <StyledButton neu={false} onClick={handleSignupClick}>Sign up</StyledButton>
                 </div>
             </div>
         </div>

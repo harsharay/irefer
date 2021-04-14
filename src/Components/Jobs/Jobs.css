@@ -1,0 +1,155 @@
+:root {
+    --darkBlueShade: #0D3140;
+    --blueShade: #0F497A;
+    --whiteShade: #EDF2F7;
+    --yellowShade: #FFBE55;
+}
+
+.jobs-root {
+    height: 94vh;
+    background-color: var(--blueShade);
+}
+
+.jobs-content {
+    height: 80%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid salmon; */
+
+    margin-left: 10%;
+
+    padding-top: 5%;
+}
+
+.jobs-content > p {
+    color: var(--whiteShade);
+    
+    position: absolute;
+    top: 15%;
+    left: 35%;
+
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.jobs-filter {
+    /* border: 2px solid white; */
+
+    height: 90%;
+    width: 20%;
+    
+    margin-bottom: -4.8%;
+
+    display: grid;
+    place-items: center;
+}
+
+.filter-div {
+    width: 169px;
+    height: 526px;
+
+    box-shadow: 6px 3px 10px #0d3e68, -4px -2px 8px #11548c;
+
+    border-radius: 10px;
+
+}
+
+.jobs-list {
+    /* border: 2px solid yellow; */
+    
+    height: 100%;
+    width: 80%;
+    
+    display: grid;
+    place-items: center;
+}
+
+.jobs-list-div {
+
+    /* position: relative;
+    top: 100px; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px;
+
+    /* margin: 0 20% 0 10%; */
+    margin-bottom: -35px;
+
+    width: 725px;
+
+    margin-left: -20%;
+}
+
+.job-card {
+    box-shadow: 6px 3px 10px #0d3e68, -4px -2px 8px #11548c;
+
+    border-radius: 10px;
+
+    width: 328px;
+    height: 149px;
+
+    color: var(--whiteShade);
+
+    margin: 0 10%;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    text-align: left;
+
+    padding-left: 7%;
+}
+
+.job-card button {
+    position: relative;
+    top: -38%;
+    left: 60%;
+
+    color: #FE7272 !important;
+
+    font-size: 10px !important;
+    font-weight: 600 !important;
+
+    width: 109px !important;
+    height: 32px !important;
+}
+
+.card-title-company {
+    /* border: 2px solid red; */
+
+    height: 50%;
+}
+
+.job-card-company {
+    font-size: 14px;
+
+    position: relative;
+    top: -17%;
+
+    color: #edf2f7c2;
+}
+
+.job-card-skills-block {
+    position: relative;
+    top: -11%;
+}
+
+.job-card-skills-title {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.job-card-skills-content {
+    font-size: 12px;
+
+    margin-top: -3%;
+
+    color: #edf2f7c2;
+}

@@ -1,13 +1,17 @@
 :root {
+    --darkBlueShade: #0D3140;
     --blueShade: #0F497A;
     --whiteShade: #EDF2F7;
+    --yellowShade: #FFBE55;
 }
 
 .signup-root {
     display: grid;
     place-items: center;
 
-    height: 85.7vh;
+    height: 94vh;
+
+    background-color: var(--blueShade);
 
 }
 
@@ -15,7 +19,7 @@
     width: 543px;
     height: 362px;
 
-    background-color: var(--blueShade);
+    background-color: var(--whiteShade);
 
     border-radius: 10px;
 
@@ -29,7 +33,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 800;
-    color: var(--whiteShade);
+    color: var(--blueShade);
 
     letter-spacing: 0.7px;
 }
@@ -80,7 +84,7 @@
     font-size: 24px;
     font-weight: 800;
     
-    color: var(--whiteShade)
+    color: var(--blueShade)
 }
 
 .form {
@@ -88,7 +92,7 @@
 }
 
 .form-inputDiv > p {
-    color: var(--whiteShade);
+    color: var(--blueShade);
 
     font-size: 16px;
     font-weight: 800;
@@ -101,7 +105,7 @@
     /* font-weight: 600 !important; */
 }
 
-.finish-signup {
+/* .finish-signup {
     background: #0F497A !important;
     box-shadow:  6px 3px 10px #0d3e68,
              -4px -2px 8px #11548c !important;
@@ -113,14 +117,15 @@
     letter-spacing: 0.5px !important;
 
     border-radius: 5px !important;
-}
+} */
 
 .signup-success p{
     font-size: 28px;
     font-weight: 400;
+    color: var(--whiteShade)
 }
 
 .signup-success a {
     font-weight: 700;
-    color: var(--blueShade) !important;
+    color: var(--yellowShade) !important;
 }

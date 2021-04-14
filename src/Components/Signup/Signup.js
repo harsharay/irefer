@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { StyledButton, StyledInput } from "../../StyledComponents/styledComponents";
+import { StyledButton, StyledInput, NeuButton } from "../../StyledComponents/styledComponents";
 import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
 import { VscLoading } from "react-icons/vsc"
 import { Link } from "react-router-dom"
 
-import {ReactComponent as SuccessImg} from "../../Assets/success.svg"
+import {ReactComponent as SuccessImg} from "../../Assets/SuccessNew.svg"
 
 import "./Signup.css"
 
@@ -77,14 +77,14 @@ const Signup = () => {
             {!signupComplete ?
                 <div className={'signup-box ' + (Object.keys(loginData).length > 0 ? "increasedHeight" : "")}>
                 { loading ? 
-                    <VscLoading style={{ width: '24px', height: '24px', color: '#EDF2F7' }}/> 
+                    <VscLoading style={{ width: '24px', height: '24px', color: '#0D3140' }}/> 
                     :
                     (Object.keys(loginData).length === 0  ?
                             <>
                                 <p>Complete the signup</p>
                                 <div className="signup-button-group">
-                                    <StyledButton className="signup-button-modified" onClick={handleGoogleLogin}>Sign up with <FcGoogle className="signup-icons"/></StyledButton>
-                                    <StyledButton className="signup-button-modified" onClick={handleGithubLogin}>Sign up with <ImGithub className="signup-icons"/></StyledButton>
+                                    <NeuButton className="signup-button-modified" onClick={handleGoogleLogin} dark={false}>Sign up with <FcGoogle className="signup-icons"/></NeuButton>
+                                    <NeuButton className="signup-button-modified" onClick={handleGithubLogin} dark={false}>Sign up with <ImGithub className="signup-icons"/></NeuButton>
                                 </div>
                             </>
                         :
@@ -112,7 +112,7 @@ const Signup = () => {
                                         </div>
                                     </div>
                                     {/* <StyledButton onClick={handleCompleteSignupProcess} className="finish-signup">Finish</StyledButton> */}
-                                    <StyledButton onClick={handleCompleteSignupProcess} neuButton={true}>Finish</StyledButton>
+                                    <StyledButton onClick={handleCompleteSignupProcess} dark={true}>Finish</StyledButton>
                                 </div>
                             </>
                         )
@@ -120,6 +120,7 @@ const Signup = () => {
                 </div>
                 :
                 <div className="signup-success">
+                    <p>Successfully created your profile!</p>
                     <SuccessImg style={{ width: "508.33px", height: "492.34px" }}/>
                     <p>Now, checkout some jobs to apply <Link to="/jobs">here</Link></p>
                 </div>

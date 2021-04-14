@@ -1,8 +1,14 @@
+:root {
+    --darkBlueShade: #0D3140;
+    --blueShade: #0F497A;
+    --whiteShade: #EDF2F7;
+}
+
 .nav-root {
     width: 100vw;
-    height: 60px;
+    height: 6vh;
 
-    background-color: #0F497A;
+    background-color: var(--darkBlueShade);
     color: #EDF2F7;
 
     display: flex;
